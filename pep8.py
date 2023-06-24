@@ -16,7 +16,7 @@
 # numero = 4
 # numero_impar = 5
 
-# 3 - Utilize 4(quatro) espaços para identação
+# 3 - Utilize 4(quatro) espaços para identação (Não use TAB)
 
 # if 'a' in 'banana':
     # print('tem')
