@@ -21,3 +21,5 @@
 # if 'a' in 'banana':
     # print('tem')
 # ^^^4 espaços    
+
+# 4 - Linhas em branco
