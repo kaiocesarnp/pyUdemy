@@ -42,6 +42,23 @@
 # from types import StringType, ListType
 # Utilização de classes isoladas do pacote 'types'
 
+# Caso tenha muitos imports de um mesmo pacote, recomenda-se fazer:
+# from types import (
+#     StringType,
+#     ListType,
+#     SetType,
+#     OutroType
+# )
+
+# Imports devem ser colocados no topo do arquivo, logo depois de quaisquer comentários ou docstrings
+    # antes de constantes ou variáveis globais
+
+# 6 - Espaços em expressões e instruções
+# Não faça:
+# funcao( algo[ 1 ], { outro: 2 } )
+
+# faça:
+# funcao(algo[1], {outro: 2})
 
 
 
