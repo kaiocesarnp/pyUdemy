@@ -38,4 +38,20 @@
 # import sys
 # import os
 
+# Não há problemas em utilizar:
+# from types import StringType, ListType
+# Utilização de classes isoladas do pacote 'types'
+
+
+
+
+
+
+
+
+
+
+
+
+
 
