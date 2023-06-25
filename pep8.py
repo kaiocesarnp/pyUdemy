@@ -60,15 +60,5 @@
 # faça:
 # funcao(algo[1], {outro: 2})
 
-
-
-
-
-
-
-
-
-
-
-
-
+# 7 - Termine sempre uma instrução com uma nova linha
+# Essa é a linha em branco
