@@ -23,3 +23,19 @@
 # ^^^4 espaços    
 
 # 4 - Linhas em branco
+# Separar funções e definições de classe com duas linhas em branco;
+# Métodos dentro de uma classe devem ser separados com uma única linha em branco;
+# class Classe:
+
+
+# class Classe:
+
+# 5 - Imports - Imports devem ser sempre feitos em linhas separadas
+# Errado:
+# import sys, os
+
+# Certo:
+# import sys
+# import os
+
+
