@@ -17,7 +17,7 @@ print(f'Seja bem-vindo(a) {nome}') # Exemplo de print 'mais atual' 3.7x
 # print("Qual sua idade? ")
 # idade = input()
 
-idade = input('Qual sua idade? ')
+idade = int(input('Qual sua idade? '))
 
 # Saída de dados
 # print("O(A) %s tem %s anos." % (nome, idade)) # Exemplo de print 'antigo' 2.x
@@ -31,5 +31,5 @@ idade = input('Qual sua idade? ')
 # print(f'O(A) {nome} nasceu em {2023 - int(idade)}')
 
 
-print(f'O(A) {nome} tem {idade} anos e, nasceu em {2023 - int(idade)}.')
+print(f'O(A) {nome} tem {idade} anos e, nasceu em {2023 - idade}.')
 
