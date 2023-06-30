@@ -27,3 +27,9 @@ print(type(valor2))
 res = int(valor) #convertendo o 'valor = 1.44'
 print(res)
 print(type(res))
+
+# Numeros complexos
+valor3 = 5j
+print(valor3)
+print(type(valor3))
+print(valor3 ** 2)
