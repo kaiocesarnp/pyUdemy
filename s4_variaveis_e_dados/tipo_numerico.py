@@ -23,6 +23,7 @@ print(valor2)
 print(type(valor2))
 
 # Converter um float para um int
+    # Ao converter valores float para inteiros, se perde a precisão
 res = int(valor) #convertendo o 'valor = 1.44'
 print(res)
 print(type(res))
