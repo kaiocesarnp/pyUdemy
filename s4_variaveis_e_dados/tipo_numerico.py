@@ -22,3 +22,7 @@ print(type(valor1))
 print(valor2)
 print(type(valor2))
 
+# Converter um float para um int
+res = int(valor) #convertendo o 'valor = 1.44'
+print(res)
+print(type(res))
