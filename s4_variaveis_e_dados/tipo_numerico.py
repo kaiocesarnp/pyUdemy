@@ -5,12 +5,12 @@ TIPO NUMÉRICO
 num = 1_000_000
 print(num)
 
-# Errado, tuple
+# Errado do ponto de vista do float, mas gera uma tuple
 valor = 1, 44
 print(valor)
 print(type(valor))
 
-# Certo, float
+# Certo do ponto de vista float
 valor = 1.44
 print(valor)
 print(type(valor))
