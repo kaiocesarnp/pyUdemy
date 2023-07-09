@@ -22,3 +22,21 @@ Exemplo em Java:
 int numero = 42;
 """
 
+
+""""
+# Exemplo de variável global:
+numero = 42
+print(numero)
+print(type(numero))
+"""
+
+# Exemplo de variável local:
+    # o print da variavel 'novo' não é impresso fora do if pois ela é uma variável local.
+        # Neste caso apenas sendo um número menor que o do if > 10
+numero = 2
+
+if numero > 10:
+    novo = numero + 10
+    print(novo)
+
+print(novo)
