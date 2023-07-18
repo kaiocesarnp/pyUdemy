@@ -1,5 +1,5 @@
 """
-Loop e for
+Loop for
 
 Loop > Estrutura de repetição
 For > Uma dessas estruturas
