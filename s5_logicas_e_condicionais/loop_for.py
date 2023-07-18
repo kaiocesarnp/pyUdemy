@@ -14,6 +14,8 @@ Exemplos de iteráveis:
    numeros = range(1, 10)
 
 """
+
+"""
 nome = 'Geek University'
 lista = [1, 3, 5, 7, 9]
 numeros = range(1, 10) #Temos que transformar numa lista
@@ -53,6 +55,21 @@ for valor in enumerate(nome):
     print(valor[1]) #somente a letra
 
 
+#-------------
+
+#Utilização do for noutros casos:
+
+qtd = int(input('Quantas vezes esse loop deve rodar?')) #lembre-se que o último número não é incluso
+for n in range(1, qtd+1):
+    print(f'Imprimindo {n}')
+"""
+
+qtd = int(input('Quantas vezes esse loop deve rodar?'))
+soma = 0
+for n in range(1, qtd+1):
+    num = int(input(f'Informe o {n}/{qtd} valor: '))
+    soma = soma + num
+print(f'A soma é {soma}')
 
 
 
