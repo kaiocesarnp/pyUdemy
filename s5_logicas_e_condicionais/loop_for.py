@@ -24,6 +24,10 @@ numeros = range(1, 10) #Temos que transformar numa lista
 for letra in nome:
     print(letra)
 
+#Imprimindo o nome em sequencia, sem ser uma letra embaixo da outra:
+for letra in nome:
+    print(letra, end='')
+
 #Exemplo de for 2 (iterando sobre uma lista)
 for numero in lista:
     print(numero)
@@ -62,7 +66,6 @@ for valor in enumerate(nome):
 qtd = int(input('Quantas vezes esse loop deve rodar?')) #lembre-se que o último número não é incluso
 for n in range(1, qtd+1):
     print(f'Imprimindo {n}')
-"""
 
 qtd = int(input('Quantas vezes esse loop deve rodar?'))
 soma = 0
@@ -72,8 +75,18 @@ for n in range(1, qtd+1):
 print(f'A soma é {soma}')
 
 
+#Imprimindo emojis:
+#original: U+1F60D - U+1F605
+#modificado: U00001F60D - U0001F605
 
+for num in range(1, 11):
+    print('\U00001F60D' * num)
 
+"""
+#Outra forma:
+for _ in range(3):
+    for num in range(1, 11):
+        print('\U0001F605' * num)
 
 
 
