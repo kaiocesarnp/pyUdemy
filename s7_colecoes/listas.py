@@ -46,11 +46,10 @@ print(lista5)
 print(lista1.count(1))
 print(lista5.count('e'))
 
-"""
 #--------------
 
 #Adicionar elementos em listas:
-    #Utilizamos a função 'append'
+    #Utilizamos a função 'append' e 'extend'
     #Com append, só é possivel adicionar um elemento por vez
 
 print(lista1)
@@ -58,7 +57,6 @@ lista1.append(35)
 print(lista1)
 
 #Adicionando mais elementos, no formato de nova lista dentro da lista:
-
 lista1.append([8, 3, 1])
 print(lista1)
 if [99, 39, 19] in lista1:
@@ -66,10 +64,14 @@ if [99, 39, 19] in lista1:
 else:
     print('List not found')
 
-#A função 'extend' faz o mesmo que a 'append'
+#A função 'extend' faz o mesmo que a 'append'. Mas ao adicionar, os elementos não formam uma nova lista dentro da primeira lista
+    #Os elementos são adicionados diretamente na lista
+    #O 'extend' não aceita valor único
 lista1.extend([133, 253, 643])
 print(lista1)
 
+#--------------
 
+"""
 
 
