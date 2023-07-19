@@ -200,8 +200,6 @@ for produto in carrinho:
 
 #--------------
 
-"""
-
 #Utilizando variáveis em listas
 numeros = [1, 2, 3, 4, 5]
 print(numeros)
@@ -213,6 +211,24 @@ num4 = 4
 num5 = 5
 numeros = [num1, num2, num3, num4, num5]
 print(numeros)
+
+#--------------
+
+#Fazer acesso aos elementos de forma indexada
+cores = ['verde', 'amarelo', 'azul', 'branco']
+
+#Fazer acesso aos elementos de forma indezada inversa
+    #Para entender melhor o índice negativo, pense num círculo, onde o final de um
+	#elemento está ligado ao início da lista
+print(cores[-1]) #branco
+print(cores[-2]) #azul
+print(cores[-5]) #erro
+
+#--------------
+
+
+"""
+cores = ['verde', 'amarelo', 'azul', 'branco']
 
 
 
