@@ -72,6 +72,109 @@ print(lista1)
 
 #--------------
 
+#Inserir novo elemento na lista informando a posição do índice
+    #Isso não substitui o valor inicial, o mesmo será deslocado para o próximo índice
+lista1.insert(2, 'novo valor')
+print(lista1)
+
+#--------------
+
+#Juntando duas listas
+lista1 = lista1 + lista2
+print(lista1)
+
+#Outra forma de juntar listas:
+lista1.extend([lista2, lista5])
+print(lista1)
+
+#--------------
+
+#Inverter listas, utilizando 'reverse'
+lista1.reverse()
+lista2.reverse()
+
+print(lista1)
+print(lista2)
+
+#Outra forma
+print(lista1[::-1])
+print(lista2[::-1])
+
+#--------------
+
+#Copiar uma lista
+lista6 = lista2.copy()
+print(lista6)
+
+#--------------
+
+#Tamanho da lista (quantos elementos têm)
+print(len(lista2))
+
+#--------------
+
+#Remover o último elemento de uma lista
+    #O pop não somente remove o último elemento, como também o retorna
+print(lista5)  #Antes de remover
+lista5.pop()
+print(lista5)  #Depois de remover
+
+#Remover um elemento pelo índice
+    #Os elementos à direita deste índice, serão deslocados para a esquerda
+    #Se não houver elemento no índice informado, haverá o erro IndexError
+lista5.pop(2)
+print(lista5)
+
+#--------------
+
+#Remover todos os elementos
+print(lista5)
+lista5.clear()
+print(lista5)
+
+#--------------
+
+#Repetir elementos numa lista
+nova = [1, 2, 3]
+print(nova)
+
+nova = nova * 3
+print(nova)
+
+#--------------
+
+#Converter uma string numa lista
+    #Por padrão, o 'split' separa os elementos da lista pelo espaçõ entre elas
+curso = 'Programação em Python: Essencial'
+print(curso)
+curso = curso.split()
+print(curso)
+
+#Outra forma
+curso = 'Programação,em,Python:,Essencial'
+print(curso)
+curso = curso.split(',') #indica que o separador é a vírgula, não mais o espaço
+print(curso)
+
+#--------------
+
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
