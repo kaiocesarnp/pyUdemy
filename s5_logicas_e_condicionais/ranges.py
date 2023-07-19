@@ -37,22 +37,3 @@ obs: valor_de_parada não incluído (valor_de_inicio espicificado e passo espici
 
 for num in range(10, -1, -1):
     print(num)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -24,30 +24,3 @@ while numero < 10:
 resposta = ''
 while resposta != 'sim'.upper():
     resposta = input('O Palmeiras tem mundial? ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

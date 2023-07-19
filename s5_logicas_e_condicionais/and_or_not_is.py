@@ -39,18 +39,3 @@ print(not True)
 
 #is
 print(ativo is False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
