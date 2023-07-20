@@ -9,6 +9,7 @@ Qualquer tipo de dado: Não possui tipo de dado fixo, ou seja, pode-se colocar q
 As listas em Python são representadas por colchetes: []
 """
 
+"""
 type([])
 lista1 = [1, 99, 47, 27, 15, 22, 3, 1, 44, 42, 27]
 lista2 = ['G', 'e', 'e', 'k', ' ', 'U', 'n', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y']
@@ -18,7 +19,6 @@ lista5 = list('Geek University')
 lista6 = [1, 2.34, True, 'Geek', 'd', [1, 2, 3], 45345345345] #lista com diversos tipos de dados
 
 
-"""
 #Podemos checar se determinado valor está contido na lista
 num = int(input('Qual o numero? '))
 if num in lista4:
@@ -216,32 +216,57 @@ print(numeros)
 
 #Fazer acesso aos elementos de forma indexada
 cores = ['verde', 'amarelo', 'azul', 'branco']
+print(cores)
 
-#Fazer acesso aos elementos de forma indezada inversa
+#Fazer acesso aos elementos de forma indexada inversa
     #Para entender melhor o índice negativo, pense num círculo, onde o final de um
 	#elemento está ligado ao início da lista
 print(cores[-1]) #branco
 print(cores[-2]) #azul
 print(cores[-5]) #erro
 
+for cor in cores:
+   print(cor)
+
+#enquanto o indice for menor que o len(tamanho, 4) das cores, imprima cores na posição indice
+indice = 0
+while indice < len(cores):
+    print(cores[indice]) 
+    indice = indice + 1
+
+#Gerar indice num for
+for indice, cor in enumerate(cores):
+    print(indice, cor)
+
+cores = list(enumerate(cores))
+print(cores)
+
 #--------------
 
+#Listas aceitam valores repetidos
+lista = []
+lista.append(38)
+lista.append(33)
+lista.append(38)
+lista.append(33)
+
+print(lista)
+
+#--------------
 
 """
-cores = ['verde', 'amarelo', 'azul', 'branco']
+#Outros métodos não tão importantes mas também úteis:
 
+#Econtrar o índie de um elemento na lista
+    #Retorna o índice do primeiro elemento encontrado
+    #Caso não tenha o elemento na lista, será apresentado erro ValueError
+numeros = [5, 6, 7, 8, 9, 10]
 
+	#Em qual índice está o valor 6?
+print(numeros.index(6))
 
-
-
-
-
-
-
-
-
-
-
+	#Em qual índice está o valor 9?
+print(numeros.index(9))
 
 
 
