@@ -291,27 +291,82 @@ print(lista[:4]) #começa em 0 e pega até o índice 4 -1
 print(lista[1:3]) #começa em 1 e pega até o índice 3 -1
 print(lista[1:-1])
 
-
-"""
-
 #trabalhando com slice de lista com o parametro 'passo'
-lista = [1, 2, 3, 4]
-
 print(lista[1::2]) #começa em 1, vai até o final, de 2 em 2
 print(lista[::2]) #começa em 0, vai até o final, de 2 em 2
-
 print(lista[1::-1]) #começa em 1, vai até o final, de -1 em -1
 
+#---------------
+
+#Invertendo valores numa lista
+nomes = ['Geek', 'University']
+nomes[0], nomes [1] = nomes [1], nomes[0] #zero vira um e um vira zero
+print(nomes)
+
+#outra forma
+nomes = ['Geek', 'University']
+nomes.reverse()
+print(nomes)
+
+#--------------
+
+#soma*, valor máximo*, valor mínimo*, tamanho
+	# * se os valores forem todos inteiros ou reais
+lista = [1, 2, 3, 4, 5, 6]
+print(sum(lista)) #soma
+print(max(lista)) #maximo valor
+print(min(lista)) #minimo valor
+print(len(lista)) #tamanho da lista
+
+#--------------
+
+#Transformar uma lista em tupla
+lista = [1, 2, 3, 4, 5, 6]
+print(lista)
+print(type(lista))
+
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
+
+#--------------
+
+#Desempacotamento de listas
+	#caso haja mais elementos para desempacotar do que variáveis 
+	    #para receber os valores, dará ValueErro. O mesmo vale para o contrário
+lista = [1, 2, 3]
+num1, num2, num3 = lista
+print(num1)
+print(num2)
+print(num3)
+
+#--------------
+
+#Copiando uma lista para outra (deep copy e shallow copy)
+    #forma 1 - Deep Copy
+	#ao utilizar 'lista.copy()', copia-se os dados de uma para outra, mas elas são independentes, ou seja,
+	    #modificando a lista, a original não é afetada. Isso em Python é chamado de Deep Copy (ou cópia profunda)
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy()
+print(nova)
+
+nova.append(4)
+print(nova)
 
 
+    #forma 2 - Shallow Copy
+	#cópia via atribuição. Após modificar uma das listas, a original também é modificada.
+	    #Isso em python é chamado de shallow copy
+lista = [1, 2, 3]
+print(lista)
 
+nova = lista
+nova.append(4)
+print(lista)
+print(nova)
 
+#--------------
 
-
-
-
-
-
-
-
-
+"""
