@@ -51,7 +51,7 @@ escola, curso = tupla
 print(escola)
 print(curso)
 
-
+18:17
 
 
 
