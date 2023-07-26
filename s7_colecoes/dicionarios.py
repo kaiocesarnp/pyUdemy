@@ -77,9 +77,6 @@ print(type(localidades))
 
 ------------------------
 
-
-"""
-
 #Adicionar elementos num dicionário
 receita = {'jan': 100, 'fev': 120, 'mar': 300}
 print(receita)
@@ -94,6 +91,8 @@ novo_dado = {'mai': 500}
 receita.update(novo_dado) #receita.update({'mai': 500})
 print(receita)
 
+-----
+
 #Atualizando dados num dicionário
 #Forma 1
 receita['mai'] = 550
@@ -103,24 +102,32 @@ print(receita)
 receita.update({'mai': 600})
 print(receita)
 
+#CONCLUSÃO 1: A forma de adicionar novos elementos ou atualizar dados é a mesma.
+#CONCLUSÃO 2: Em dicionários, NÃO pode haver chaves repetidas.
 
+------------------------
 
+#Remover dados de um dicionário
+receita = {'jan': 100, 'fev': 120, 'mar': 300}
+print(receita)
 
+#Forma 1 - Mais comum
+ret = receita.pop('mar') #pop remove o ultimo elemento da lista
+print(ret)
 
+print(receita)
+#OBS 1: É necessário SEMPRE informar a chave, e caso não encontre o elemento, um KeyError é retornado
+#OBS 2: Ao remover um objeto, o valor deste é sempre retornado - print(ret).
 
+#Forma 2
+del receita['fev']
+print(receita)
+#Se a chave não existir, será gerado um KeyError
+#Neste caso, o valor removido não é retornado
 
-
-
-
-
-
-
-
-
-
-
-
-
+------------------------
+58:00
+"""
 
 
 
