@@ -64,18 +64,44 @@ print('Estados Unidos' in paises) #isso é valor, não chave, por isso da False
 
 ------------------------
 
+#Podemos utilizar qualquer tipo de dado (in, float, string, boolean), inclusive lista,
+	#tupla dicionário, como chaves de dicionarios.´'
+#Tuplas são interessantes de serem utilizadas como chave de dicionários, pois as mesmas são imutáveis
+localidades = {
+    (35.6895, 39.6917): 'Escritório em Tokio',
+    (40.7128, 74.0060): 'Escritório em Nova Yor',
+    (37.7749, 122.4194): 'Escritório em São Paulo'
+}
+print(localidades)
+print(type(localidades))
+
+------------------------
+
 
 """
 
+#Adicionar elementos num dicionário
+receita = {'jan': 100, 'fev': 120, 'mar': 300}
+print(receita)
+print(type(receita))
 
+#Forma 1 - Mais comum
+receita['abr'] = 350
+print(receita)
 
+#Forma 2
+novo_dado = {'mai': 500}
+receita.update(novo_dado) #receita.update({'mai': 500})
+print(receita)
 
+#Atualizando dados num dicionário
+#Forma 1
+receita['mai'] = 550
+print(receita)
 
-
-
-
-
-
+#Forma 2
+receita.update({'mai': 600})
+print(receita)
 
 
 
