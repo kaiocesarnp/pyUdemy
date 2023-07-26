@@ -111,6 +111,12 @@ print(tupla.count('a'))
 
 ---------------------------
 
+#Dicas na utilização de tuplas:
+#Devemos utilizar tuplas SEMPRE que não precisarmos modificar os dados contidos numa coleção
+
+#Exemplo 1:
+meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+print(meses)
 
 #O acesso a elementos de uma tupla também é semelhante a de uma lista
 print(meses[5])
@@ -126,21 +132,32 @@ while i < len(meses): #Enquanto o i for menor que o tamanho (len) de meses
 #OBS: Caso o elemento não exista, será gerado ValueError.
 print(meses.index('Junho', 3)) #a partir do indice 3, no caso
 
-
-"""
-
-#Dicas na utilização de tuplas
-
-#Devemos utilizar tuplas SEMPRE que não precisarmos modificar os dados contidos numa coleção
-
-#Exemplo 1:
-meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
-print(meses)
-
 #Slicing
 #tupla[inicio:fim:passo]
 print(meses[4:8])
 
+---------------------------
+
+#Poque utilizar tuplas?
+#Tuplas são mais rápidas do que listas
+#Tuplas deixam seu código mais seguro, isso porque trabalhar com elementos imutaveis traz segurança para o código
+
+---------------------------
+
+#Copiando uma tupla para outra
+tupla = (1, 2, 3)
+print(tupla)
+
+nova = tupla #na tupla não há problema de shallow copy
+print(nova)
+print(tupla)
+
+outra = (4, 5, 6)
+nova = nova + outra
+print(nova)
+print(tupla)
+
+"""
 
 
 
