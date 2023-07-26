@@ -12,6 +12,7 @@ Quando utilizar?
 - Quando se quer criar uma variável e inicializá-la com um tipo sem tipo, antes
 de receber um valor final.
 
+O tipo None em Py, é sempre considerado False
 """
 numeros = None
 print(numeros)
