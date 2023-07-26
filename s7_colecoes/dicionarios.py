@@ -41,7 +41,7 @@ print(paises.get('br'))
 print(paises.get('ru')) #None
 
 --
-Forma 2.1
+#Forma 2.1
 pais = paises.get('br')
 if pais:
     print(f'Encontrei o país {pais}')
@@ -49,17 +49,23 @@ else:
     print('Não encontrei o país')
 
 --
-Forma 2.2
+#Forma 2.2
 #Definindo um valor padrão ('não encontrado') para caso não haja a chave informada
 pais = paises.get('ru', 'Não encontrado') #pega o valor da chave (br) e caso não encontre, coloque o valor 'não encontrado' no lugar.
 print(f'Encontrei o país {pais}')
 
 ------------------------
 
-"""
-
+#Verificar se determinada chave está dentro do dicionário
 paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+print('br' in paises)
+print('ru' in paises)
+print('Estados Unidos' in paises) #isso é valor, não chave, por isso da False
 
+------------------------
+
+
+"""
 
 
 
