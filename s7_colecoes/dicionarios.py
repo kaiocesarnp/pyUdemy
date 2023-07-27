@@ -138,8 +138,6 @@ Carrinho de compras:
 	- quantidade;
 	- preço;
 
-"""
-
 # 1 - Poderíamos utilizar uma lista para isso? Sim
 carrinho = []
 
@@ -151,7 +149,7 @@ carrinho.append(produto2)
 print(carrinho)
 #Teríamos que saber qual é o índice de cada informação no produto.
 
-#-------
+#----
 
 # 2 - Poderíamos utilizar uma tupla para isso? Sim
 produto1 = ('Playstation 4', 1, 23000.00)
@@ -161,7 +159,7 @@ carrinho = (produto1, produto2)
 print(carrinho)
 #Teríamos que saber qual é o índice de cada informação no produto.
 
-#-------
+#----
 
 # 3 - Poderíamos utilizar um dicionário para isso? Sim
 carrinho = []
@@ -173,6 +171,40 @@ carrinho.append(produto1)
 carrinho.append(produto2)
 print(carrinho)
 
+------------------------
+
+#Métodos de dicionários:
+
+d = dict(a=1, b=2, c=3)
+print(d)
+print(type(d))
+
+#Limpar o dicionário (zerar dados)
+d.clear()
+print(d)
+
+#----
+#Copiando um dicionário para outro
+
+#Forma 1 - Deep copy
+novo = d.copy() 
+print(novo)
+
+novo ['d'] = 4
+print(d)
+print(novo)
+
+#----
+
+#Forma 2 - Shallow Copy
+novo = d
+print(novo)
+
+novo['d'] = 4
+print(d)
+print(novo)
+
+"""
 
 
 
