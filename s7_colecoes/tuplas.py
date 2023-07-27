@@ -158,17 +158,3 @@ print(nova)
 print(tupla)
 
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-

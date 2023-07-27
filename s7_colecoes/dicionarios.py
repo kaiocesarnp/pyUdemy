@@ -205,11 +205,3 @@ print(d)
 print(novo)
 
 """
-
-
-
-
-
-
-
-
