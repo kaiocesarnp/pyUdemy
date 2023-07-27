@@ -126,8 +126,53 @@ print(receita)
 #Neste caso, o valor removido não é retornado
 
 ------------------------
-58:00
+
+#Imagine que você tem um e-commerce, onde há um carrinho de compras com os seguintes produtos:
+Carrinho de compras:
+    Produto 1:
+	- nome;
+	- quantidade;
+	- preço;
+    Produto 2:
+	- nome;
+	- quantidade;
+	- preço;
+
 """
+
+# 1 - Poderíamos utilizar uma lista para isso? Sim
+carrinho = []
+
+produto1 = ['Playstation 4', 1, 23000.00]
+produto2 = ['God of War', 1, 150.00]
+
+carrinho.append(produto1)
+carrinho.append(produto2)
+print(carrinho)
+#Teríamos que saber qual é o índice de cada informação no produto.
+
+#-------
+
+# 2 - Poderíamos utilizar uma tupla para isso? Sim
+produto1 = ('Playstation 4', 1, 23000.00)
+produto2 = ('God of War', 1, 150.00)
+
+carrinho = (produto1, produto2)
+print(carrinho)
+#Teríamos que saber qual é o índice de cada informação no produto.
+
+#-------
+
+# 3 - Poderíamos utilizar um dicionário para isso? Sim
+carrinho = []
+
+produto1 = {'nome': 'Playstation 4', 'quantidade': 1, 'preço': 2300.00}
+produto2 = {'nome': 'God of War', 'quantidade': 1, 'preço': 150.00}
+
+carrinho.append(produto1)
+carrinho.append(produto2)
+print(carrinho)
+
 
 
 
