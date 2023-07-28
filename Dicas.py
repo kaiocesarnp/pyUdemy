@@ -21,3 +21,13 @@ print(nome.replace('G', 'P'))
 texto = 'socorram me subino onibus em marrocos'
 print(texto)
 print(texto[::-1])
+
+
+# -----------------------------------------
+
+#split: gera cada uma das palavras como elemento de uma lista
+exemplo = exemplo.split() 
+print(exemplo)
+
+
+# -----------------------------------------
