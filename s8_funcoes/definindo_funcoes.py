@@ -11,9 +11,6 @@ OBS: Caso escreva uma função que realize várias tarefas dentro dela, é bom f
 - Várias funções já foram utilizadas neste curso:
 print(), len(), max(), min(), count()...
 
-
-"""
-
 #Exemplo de utilização de funções
 
 cores = ['verde', 'amarelo', 'azul', 'branco'] #isso é uma lista
@@ -29,22 +26,6 @@ print(curso)
 #curso.append('Mais dados..') #AttributeError. A variável do tipo 'string' não tem o atributo 'append'
 #print(curso)
 
-print(help(print))
+16:00
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""

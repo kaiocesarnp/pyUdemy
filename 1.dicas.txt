@@ -1,5 +1,7 @@
 # DICAS
 
+#DRY - Don't repeat yourself - Não repita você mesmo - não repita seu código
+
 """
 nome = 'Geek University'
 print(nome.split()) = Transforma em uma lista de strings
