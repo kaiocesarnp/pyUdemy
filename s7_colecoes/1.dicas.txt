@@ -1,0 +1,4 @@
+#split: gera cada uma das palavras como elemento de uma lista
+exemplo = exemplo.split() 
+print(exemplo)
+
