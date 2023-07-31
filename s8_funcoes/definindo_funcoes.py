@@ -26,6 +26,4 @@ print(curso)
 #curso.append('Mais dados..') #AttributeError. A variável do tipo 'string' não tem o atributo 'append'
 #print(curso)
 
-16:00
-
 """
